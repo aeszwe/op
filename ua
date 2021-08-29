@@ -1,0 +1,1 @@
+Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.436 Mobile Safari/534.1+
