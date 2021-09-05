@@ -1,1 +1,1 @@
-Mozilla/5.0 (BlackBerry; U; BlackBerry 9670; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.436 Mobile Safari/534.1+
+Mozilla/5.0 (Linux; U; Tizen 2.0; en-us) AppleWebKit/537.1 (KHTML, like Gecko) Mobile TizenBrowser/2.0
